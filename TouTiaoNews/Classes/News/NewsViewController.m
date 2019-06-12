@@ -9,21 +9,27 @@
 #import "NewsViewController.h"
 #import "NetWorkManager.h"
 #import "ListNewsModel.h"
+#import "ListNewsViewModel.h"
+#import "NewsViewModel.h"
 #import "NewsModel.h"
+#import "NewsCell/NewsTableViewCell.h"
+#import "SDWebImage.h"
 static NSString * const NewsCellID = @"NewsCellID";
 @interface NewsViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong) UITableView *tableView;
-@property(nonatomic,strong)ListNewsModel *listNews;
+//@property(nonatomic,strong)NewsViewModel *newsViewModel;
+@property(nonatomic,strong)ListNewsViewModel *listNewsViewModel;
+
 @end
 
 @implementation NewsViewController
 //MARK: - 懒加载属性
-- (ListNewsModel *)listNews
+- (ListNewsViewModel *)listNewsViewModel
 {
-    if (_listNews == nil) {
-        _listNews = [[ListNewsModel alloc] init];
+    if (_listNewsViewModel == nil) {
+        _listNewsViewModel = [[ListNewsViewModel alloc] init];
     }
-    return _listNews;
+    return _listNewsViewModel;
 }
 
 //MARK: - 生命周期
@@ -45,13 +51,21 @@ static NSString * const NewsCellID = @"NewsCellID";
     __weak typeof(self) weakself = self;
     [[NetworkManager shared] loadNews:^(Boolean success, NSArray<NewsModel*> * _Nonnull dataArray) {
         if (success) {
+            NSMutableArray<NewsViewModel *> *list = [[NSMutableArray alloc]init];
             for(NSDictionary *info in dataArray)
             {
                 NewsModel *model = [[NewsModel alloc] init];
+                
+                NewsViewModel *newsViewModel = [[NewsViewModel alloc]init];
                 //KVC
                 [model configWithDictionary:info];
-                [weakself.listNews appendNews:model];
+                
+                newsViewModel.newsModel = model;
+                
+                [list addObject:newsViewModel];
+
             }
+            weakself.listNewsViewModel.listNews = list;
             dispatch_async(dispatch_get_main_queue(), ^{
                 [weakself.tableView reloadData];
             });
@@ -68,23 +82,30 @@ static NSString * const NewsCellID = @"NewsCellID";
     //.设置控件
     _tableView.dataSource = self;
     _tableView.delegate = self;
-    [_tableView registerClass:UITableViewCell.class forCellReuseIdentifier:NewsCellID];
+    _tableView.estimatedRowHeight = 96;
+    [_tableView registerClass:NewsTableViewCell.class forCellReuseIdentifier:NewsCellID];
 }
 
+//MARK: - TableViewDataSource & Delegate
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     
-   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NewsCellID];
+   NewsViewModel *nvm = _listNewsViewModel.listNews[indexPath.row];
     
-    [cell setText:[_listNews newsAt:indexPath.row].author_name];
-    
+   NewsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NewsCellID];
+    //用该方法赋值重用的cell，保证cell中数据不重复
+    cell.newsViewModel = nvm;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
     
 }
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _listNews.count;
+    return _listNewsViewModel.listNews.count;
 }
 
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 
 @end

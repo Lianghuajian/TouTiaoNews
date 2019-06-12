@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		692E90E022AFDA86001B33C0 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 692E90DF22AFDA86001B33C0 /* NewsTableViewCell.m */; };
 		6931A273229FF338007C4D63 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931A272229FF338007C4D63 /* NewsModel.m */; };
 		6931A277229FFA68007C4D63 /* ListNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931A276229FFA68007C4D63 /* ListNewsModel.m */; };
+		698B246122AFDDE80048AD0E /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698B246022AFDDE80048AD0E /* NewsViewModel.m */; };
+		698B246322AFE3070048AD0E /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B246222AFE3070048AD0E /* libMasonry.a */; };
+		698B246622AFEABC0048AD0E /* ListNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698B246522AFEABC0048AD0E /* ListNewsViewModel.m */; };
+		698B246822AFF1F80048AD0E /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 698B246722AFF1F80048AD0E /* libSDWebImage.a */; };
 		69C81FFA229EA014006EB19D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C81FF9229EA014006EB19D /* AppDelegate.m */; };
 		69C81FFD229EA014006EB19D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C81FFC229EA014006EB19D /* ViewController.m */; };
 		69C82002229EA017006EB19D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69C82001229EA017006EB19D /* Assets.xcassets */; };
@@ -49,10 +54,18 @@
 		0F725189646398FF9338A647 /* libPods-TouTiaoNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouTiaoNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A192D4D982AADAAB2E094FC /* Pods-TouTiaoNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouTiaoNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouTiaoNews/Pods-TouTiaoNews.release.xcconfig"; sourceTree = "<group>"; };
 		5BA5E4DD0B41A12428C442AD /* Pods-TouTiaoNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouTiaoNewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouTiaoNewsUITests/Pods-TouTiaoNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		692E90DE22AFDA86001B33C0 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		692E90DF22AFDA86001B33C0 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
 		6931A271229FF338007C4D63 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		6931A272229FF338007C4D63 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		6931A275229FFA68007C4D63 /* ListNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNewsModel.h; sourceTree = "<group>"; };
 		6931A276229FFA68007C4D63 /* ListNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNewsModel.m; sourceTree = "<group>"; };
+		698B245F22AFDDE80048AD0E /* NewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
+		698B246022AFDDE80048AD0E /* NewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
+		698B246222AFE3070048AD0E /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		698B246422AFEABC0048AD0E /* ListNewsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNewsViewModel.h; sourceTree = "<group>"; };
+		698B246522AFEABC0048AD0E /* ListNewsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListNewsViewModel.m; sourceTree = "<group>"; };
+		698B246722AFF1F80048AD0E /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C81FF5229EA014006EB19D /* TouTiaoNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouTiaoNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C81FF8229EA014006EB19D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69C81FF9229EA014006EB19D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +104,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698B246822AFF1F80048AD0E /* libSDWebImage.a in Frameworks */,
+				698B246322AFE3070048AD0E /* libMasonry.a in Frameworks */,
 				B640FEB2F9DE1E4FAF45A633 /* libPods-TouTiaoNews.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +129,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		692E90DD22AFDA60001B33C0 /* NewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				692E90DE22AFDA86001B33C0 /* NewsTableViewCell.h */,
+				692E90DF22AFDA86001B33C0 /* NewsTableViewCell.m */,
+			);
+			path = NewsCell;
+			sourceTree = "<group>";
+		};
 		6931A274229FF33C007C4D63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +147,17 @@
 				6931A276229FFA68007C4D63 /* ListNewsModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		698B245E22AFDDC30048AD0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				698B245F22AFDDE80048AD0E /* NewsViewModel.h */,
+				698B246022AFDDE80048AD0E /* NewsViewModel.m */,
+				698B246422AFEABC0048AD0E /* ListNewsViewModel.h */,
+				698B246522AFEABC0048AD0E /* ListNewsViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		69C81FEC229EA014006EB19D = {
@@ -197,6 +232,8 @@
 		69C82039229EA35F006EB19D /* News */ = {
 			isa = PBXGroup;
 			children = (
+				698B245E22AFDDC30048AD0E /* ViewModel */,
+				692E90DD22AFDA60001B33C0 /* NewsCell */,
 				6931A274229FF33C007C4D63 /* Model */,
 				69C8202C229EA297006EB19D /* NewsViewController.h */,
 				69C8202D229EA297006EB19D /* NewsViewController.m */,
@@ -243,6 +280,8 @@
 		8880E4FB6979D2E59408A4B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				698B246722AFF1F80048AD0E /* libSDWebImage.a */,
+				698B246222AFE3070048AD0E /* libMasonry.a */,
 				98E86FEF6C157503FB5EEB41 /* libPods-TouTiaoNews.a */,
 				0F725189646398FF9338A647 /* libPods-TouTiaoNewsTests.a */,
 				FF1550A20DA48187F7B21AAB /* libPods-TouTiaoNewsUITests.a */,
@@ -469,10 +508,13 @@
 				69C82031229EA2DD006EB19D /* VideoViewController.m in Sources */,
 				6931A277229FFA68007C4D63 /* ListNewsModel.m in Sources */,
 				69C81FFD229EA014006EB19D /* ViewController.m in Sources */,
+				698B246622AFEABC0048AD0E /* ListNewsViewModel.m in Sources */,
 				69C82008229EA017006EB19D /* main.m in Sources */,
 				6931A273229FF338007C4D63 /* NewsModel.m in Sources */,
 				69C82034229EA30A006EB19D /* MineViewController.m in Sources */,
+				698B246122AFDDE80048AD0E /* NewsViewModel.m in Sources */,
 				69C81FFA229EA014006EB19D /* AppDelegate.m in Sources */,
+				692E90E022AFDA86001B33C0 /* NewsTableViewCell.m in Sources */,
 				69C82037229EA32C006EB19D /* RecommendViewController.m in Sources */,
 				69C8202E229EA297006EB19D /* NewsViewController.m in Sources */,
 			);
