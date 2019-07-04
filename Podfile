@@ -8,6 +8,7 @@ pod 'CocoaLumberjack'
   # Pods for TouTiaoNews
 pod 'Masonry'
 pod 'SDWebImage', '~> 5.0'
+
   target 'TouTiaoNewsTests' do
     inherit! :search_paths
     # Pods for testing

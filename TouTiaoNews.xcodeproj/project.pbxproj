@@ -27,6 +27,12 @@
 		69C82034229EA30A006EB19D /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C82033229EA30A006EB19D /* MineViewController.m */; };
 		69C82037229EA32C006EB19D /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C82036229EA32C006EB19D /* RecommendViewController.m */; };
 		69C82040229EC7D9006EB19D /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C8203F229EC7D9006EB19D /* NetworkManager.m */; };
+		69E2045122CD026300A065E0 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2045022CD026300A065E0 /* VideoCell.m */; };
+		69E2047022CDE09500A065E0 /* CLPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2046A22CDE09400A065E0 /* CLPlayerMaskView.m */; };
+		69E2047122CDE09500A065E0 /* CLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2046C22CDE09500A065E0 /* CLPlayerView.m */; };
+		69E2047222CDE09500A065E0 /* CLPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 69E2046F22CDE09500A065E0 /* CLPlayer.bundle */; };
+		69E2047422CDE0C700A065E0 /* CLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2047322CDE0C700A065E0 /* CLSlider.m */; };
+		69E2047722CE23DD00A065E0 /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E2047622CE23DD00A065E0 /* VideoModel.m */; };
 		7E2F85D88E9D333CC5C252B2 /* libPods-TouTiaoNewsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1550A20DA48187F7B21AAB /* libPods-TouTiaoNewsUITests.a */; };
 		B640FEB2F9DE1E4FAF45A633 /* libPods-TouTiaoNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E86FEF6C157503FB5EEB41 /* libPods-TouTiaoNews.a */; };
 		FFF771A922CA184246467283 /* libPods-TouTiaoNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F725189646398FF9338A647 /* libPods-TouTiaoNewsTests.a */; };
@@ -92,6 +98,18 @@
 		69C82036229EA32C006EB19D /* RecommendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		69C8203E229EC7D9006EB19D /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		69C8203F229EC7D9006EB19D /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		69E2044F22CD026300A065E0 /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		69E2045022CD026300A065E0 /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
+		69E2046822CDB06100A065E0 /* libCLPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libCLPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		69E2046A22CDE09400A065E0 /* CLPlayerMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerMaskView.m; sourceTree = "<group>"; };
+		69E2046B22CDE09500A065E0 /* CLPlayerMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerMaskView.h; sourceTree = "<group>"; };
+		69E2046C22CDE09500A065E0 /* CLPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLPlayerView.m; sourceTree = "<group>"; };
+		69E2046D22CDE09500A065E0 /* CLSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLSlider.h; sourceTree = "<group>"; };
+		69E2046E22CDE09500A065E0 /* CLPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLPlayerView.h; sourceTree = "<group>"; };
+		69E2046F22CDE09500A065E0 /* CLPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CLPlayer.bundle; sourceTree = "<group>"; };
+		69E2047322CDE0C700A065E0 /* CLSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLSlider.m; sourceTree = "<group>"; };
+		69E2047522CE23DD00A065E0 /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		69E2047622CE23DD00A065E0 /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		8075BE231A82927E20D7AFB4 /* Pods-TouTiaoNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouTiaoNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouTiaoNews/Pods-TouTiaoNews.debug.xcconfig"; sourceTree = "<group>"; };
 		8145D6F65760BCA356A8139D /* Pods-TouTiaoNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouTiaoNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TouTiaoNewsTests/Pods-TouTiaoNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		98E86FEF6C157503FB5EEB41 /* libPods-TouTiaoNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TouTiaoNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -253,6 +271,8 @@
 		69C8203B229EA3B2006EB19D /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				69E2045322CD981100A065E0 /* VideoPlayer */,
+				69E2045222CD026700A065E0 /* VideoCell */,
 				69C8202F229EA2DD006EB19D /* VideoViewController.h */,
 				69C82030229EA2DD006EB19D /* VideoViewController.m */,
 			);
@@ -277,9 +297,35 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		69E2045222CD026700A065E0 /* VideoCell */ = {
+			isa = PBXGroup;
+			children = (
+				69E2044F22CD026300A065E0 /* VideoCell.h */,
+				69E2045022CD026300A065E0 /* VideoCell.m */,
+				69E2047522CE23DD00A065E0 /* VideoModel.h */,
+				69E2047622CE23DD00A065E0 /* VideoModel.m */,
+			);
+			path = VideoCell;
+			sourceTree = "<group>";
+		};
+		69E2045322CD981100A065E0 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				69E2046F22CDE09500A065E0 /* CLPlayer.bundle */,
+				69E2046B22CDE09500A065E0 /* CLPlayerMaskView.h */,
+				69E2046A22CDE09400A065E0 /* CLPlayerMaskView.m */,
+				69E2046E22CDE09500A065E0 /* CLPlayerView.h */,
+				69E2046C22CDE09500A065E0 /* CLPlayerView.m */,
+				69E2046D22CDE09500A065E0 /* CLSlider.h */,
+				69E2047322CDE0C700A065E0 /* CLSlider.m */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		8880E4FB6979D2E59408A4B9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				69E2046822CDB06100A065E0 /* libCLPlayer.a */,
 				698B246722AFF1F80048AD0E /* libSDWebImage.a */,
 				698B246222AFE3070048AD0E /* libMasonry.a */,
 				98E86FEF6C157503FB5EEB41 /* libPods-TouTiaoNews.a */,
@@ -411,6 +457,7 @@
 				69C82005229EA017006EB19D /* LaunchScreen.storyboard in Resources */,
 				69C82002229EA017006EB19D /* Assets.xcassets in Resources */,
 				69C8202B229EA1AF006EB19D /* icon.bundle in Resources */,
+				69E2047222CDE09500A065E0 /* CLPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,9 +551,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E2047122CDE09500A065E0 /* CLPlayerView.m in Sources */,
 				69C82040229EC7D9006EB19D /* NetworkManager.m in Sources */,
+				69E2045122CD026300A065E0 /* VideoCell.m in Sources */,
 				69C82031229EA2DD006EB19D /* VideoViewController.m in Sources */,
 				6931A277229FFA68007C4D63 /* ListNewsModel.m in Sources */,
+				69E2047722CE23DD00A065E0 /* VideoModel.m in Sources */,
+				69E2047422CDE0C700A065E0 /* CLSlider.m in Sources */,
 				69C81FFD229EA014006EB19D /* ViewController.m in Sources */,
 				698B246622AFEABC0048AD0E /* ListNewsViewModel.m in Sources */,
 				69C82008229EA017006EB19D /* main.m in Sources */,
@@ -517,6 +568,7 @@
 				692E90E022AFDA86001B33C0 /* NewsTableViewCell.m in Sources */,
 				69C82037229EA32C006EB19D /* RecommendViewController.m in Sources */,
 				69C8202E229EA297006EB19D /* NewsViewController.m in Sources */,
+				69E2047022CDE09500A065E0 /* CLPlayerMaskView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
