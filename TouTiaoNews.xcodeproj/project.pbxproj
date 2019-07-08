@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		692E90E022AFDA86001B33C0 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 692E90DF22AFDA86001B33C0 /* NewsTableViewCell.m */; };
+		692EF49A22D36247008A2F81 /* VideoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 692EF49922D36247008A2F81 /* VideoViewModel.m */; };
+		692EF49D22D3681D008A2F81 /* VideoListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 692EF49C22D3681D008A2F81 /* VideoListViewModel.m */; };
+		692EF4A322D382BE008A2F81 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692EF4A222D382BD008A2F81 /* NavigationController.m */; };
 		6931A273229FF338007C4D63 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931A272229FF338007C4D63 /* NewsModel.m */; };
 		6931A277229FFA68007C4D63 /* ListNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931A276229FFA68007C4D63 /* ListNewsModel.m */; };
 		698B246122AFDDE80048AD0E /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 698B246022AFDDE80048AD0E /* NewsViewModel.m */; };
@@ -62,6 +65,12 @@
 		5BA5E4DD0B41A12428C442AD /* Pods-TouTiaoNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouTiaoNewsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TouTiaoNewsUITests/Pods-TouTiaoNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		692E90DE22AFDA86001B33C0 /* NewsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
 		692E90DF22AFDA86001B33C0 /* NewsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		692EF49822D36247008A2F81 /* VideoViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewModel.h; sourceTree = "<group>"; };
+		692EF49922D36247008A2F81 /* VideoViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewModel.m; sourceTree = "<group>"; };
+		692EF49B22D3681D008A2F81 /* VideoListViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoListViewModel.h; sourceTree = "<group>"; };
+		692EF49C22D3681D008A2F81 /* VideoListViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoListViewModel.m; sourceTree = "<group>"; };
+		692EF4A122D382BD008A2F81 /* NavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		692EF4A222D382BD008A2F81 /* NavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		6931A271229FF338007C4D63 /* NewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
 		6931A272229FF338007C4D63 /* NewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		6931A275229FFA68007C4D63 /* ListNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListNewsModel.h; sourceTree = "<group>"; };
@@ -147,6 +156,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691F0B3022D1F7790037EEFE /* extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		692E90DD22AFDA60001B33C0 /* NewsCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +223,8 @@
 				69C8202A229EA1AF006EB19D /* icon.bundle */,
 				69C81FF8229EA014006EB19D /* AppDelegate.h */,
 				69C81FF9229EA014006EB19D /* AppDelegate.m */,
+				692EF4A122D382BD008A2F81 /* NavigationController.h */,
+				692EF4A222D382BD008A2F81 /* NavigationController.m */,
 				69C81FFB229EA014006EB19D /* ViewController.h */,
 				69C81FFC229EA014006EB19D /* ViewController.m */,
 				69C82001229EA017006EB19D /* Assets.xcassets */,
@@ -291,6 +309,7 @@
 		69C8203D229EC7AF006EB19D /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				691F0B3022D1F7790037EEFE /* extension */,
 				69C8203E229EC7D9006EB19D /* NetworkManager.h */,
 				69C8203F229EC7D9006EB19D /* NetworkManager.m */,
 			);
@@ -304,6 +323,10 @@
 				69E2045022CD026300A065E0 /* VideoCell.m */,
 				69E2047522CE23DD00A065E0 /* VideoModel.h */,
 				69E2047622CE23DD00A065E0 /* VideoModel.m */,
+				692EF49822D36247008A2F81 /* VideoViewModel.h */,
+				692EF49922D36247008A2F81 /* VideoViewModel.m */,
+				692EF49B22D3681D008A2F81 /* VideoListViewModel.h */,
+				692EF49C22D3681D008A2F81 /* VideoListViewModel.m */,
 			);
 			path = VideoCell;
 			sourceTree = "<group>";
@@ -557,11 +580,14 @@
 				69C82031229EA2DD006EB19D /* VideoViewController.m in Sources */,
 				6931A277229FFA68007C4D63 /* ListNewsModel.m in Sources */,
 				69E2047722CE23DD00A065E0 /* VideoModel.m in Sources */,
+				692EF4A322D382BE008A2F81 /* NavigationController.m in Sources */,
 				69E2047422CDE0C700A065E0 /* CLSlider.m in Sources */,
 				69C81FFD229EA014006EB19D /* ViewController.m in Sources */,
 				698B246622AFEABC0048AD0E /* ListNewsViewModel.m in Sources */,
 				69C82008229EA017006EB19D /* main.m in Sources */,
+				692EF49D22D3681D008A2F81 /* VideoListViewModel.m in Sources */,
 				6931A273229FF338007C4D63 /* NewsModel.m in Sources */,
+				692EF49A22D36247008A2F81 /* VideoViewModel.m in Sources */,
 				69C82034229EA30A006EB19D /* MineViewController.m in Sources */,
 				698B246122AFDDE80048AD0E /* NewsViewModel.m in Sources */,
 				69C81FFA229EA014006EB19D /* AppDelegate.m in Sources */,
